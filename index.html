@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="canvasContainer" class = "Container" style= "display: inline-block;"></div>
+  <div class="Container" style="display: inline-block; vertical-align: top
+  ;">
+    <input type="range" min="1" max="100" value="30" class="slider" id="speed">
+    <p>Speed: <span id="speed_1"></span></p>
+    <input type="range" min="10" max="400" value="150" class="slider" id="l1">
+    <p>Length of rod 1: <span id="l1_1"></span></p>
+    <input type="range" min="10" max="400" value="150" class="slider" id="l2">
+    <p>Length of rod 2: <span id="l2_1"></span></p>
+    <input type="range" min="1" max="200" value="20" class="slider" id="m1">
+    <p>Mass of ball 1: <span id="m1_1"></span></p>
+    <input type="range" min="1" max="200" value="20" class="slider" id="m2">
+    <p>Mass of ball 2: <span id="m2_1"></span></p>
+
+
+    <input type="range" min="0" max="100" value="5" class="slider" id="phi1">
+    <p>Initial &phi;<sub>1</sub>: <span id="phi1_1"></span></p>
+    <input type="range" min="0" max="100" value="20" class="slider" id="phi2">
+    <p>Initial &phi;<sub>2</sub>: <span id="phi2_1"></span></p>
+    <input type="range" min="0" max="50" value="0" class="slider" id="dphi1">
+    <p>Initial &phi;<sub>1</sub>': <span id="dphi1_1"></span></p>
+    <input type="range" min="0" max="50" value="0" class="slider" id="dphi2">
+    <p>Initial &phi;<sub>2</sub>': <span id="dphi2_1"></span></p>
+  </div>
+    <script src="controls.js"></script>
+  <script src="lagrangian.js"></script>
+</body>
+</html>
