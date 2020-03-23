@@ -39,32 +39,32 @@ m2_slider.oninput = function () {
 
 let phi1_slider = document.getElementById("phi1");
 let output6 = document.getElementById("phi1_1");
-output6.innerHTML = phi1_slider.value;
+output6.innerHTML = (Number(phi1_slider.value) * Math.PI / 50).toFixed(3).toString() + ' radians';
 phi1_slider.oninput = function () {
-  output6.innerHTML = this.value;
+  output6.innerHTML = (Number(this.value) * Math.PI / 50).toFixed(3).toString() + ' radians';
   reset();
 }
 
 let phi2_slider = document.getElementById("phi2");
 let output7 = document.getElementById("phi2_1");
-output7.innerHTML = phi2_slider.value;
+output7.innerHTML = (Number(phi2_slider.value) * Math.PI / 50).toFixed(2).toString() + ' radians';
 phi2_slider.oninput = function () {
-  output7.innerHTML = this.value;
+  output7.innerHTML = (Number(this.value) * Math.PI / 50).toFixed(2).toString() + ' radians';
   reset();
 }
 
 let dphi1_slider = document.getElementById("dphi1");
 let output8 = document.getElementById("dphi1_1");
-output8.innerHTML = dphi1_slider.value;
+output8.innerHTML = (Number(dphi1_slider.value) / 100).toFixed(2).toString() + ' radians/s';
 dphi1_slider.oninput = function () {
-  output8.innerHTML = this.value;
+  output8.innerHTML = (Number(this.value) / 100).toFixed(2).toString() + ' radians/s';
   reset();
 }
 
 let dphi2_slider = document.getElementById("dphi2");
 let output9 = document.getElementById("dphi2_1");
-output9.innerHTML = dphi2_slider.value;
+output9.innerHTML = (Number(dphi2_slider.value) / 100).toFixed(2).toString() + ' radians/s';
 dphi2_slider.oninput = function () {
-  output9.innerHTML = this.value;
+  output9.innerHTML = (Number(this.value) / 100).toFixed(2).toString() + ' radians/s';
   reset();
 }
